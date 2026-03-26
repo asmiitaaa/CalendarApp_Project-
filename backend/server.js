@@ -13,6 +13,8 @@ app.use("/api/events", require("./routes/events"));
 app.use("/api/participants", require("./routes/participants"));
 app.use("/api/reminders", require("./routes/reminders"));
 app.use("/api/notifications", require("./routes/notifications"));
+app.use("/api/dashboard", require("./routes/dashboard"));
+app.use("/api/admin", require("./routes/admin"));
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
